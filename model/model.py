@@ -15,7 +15,7 @@ class Model:
     def load(self):
         # TODO(varun): update hf_cache to handle filenames
         if self._use_gpu:
-            self._llm = AutoModelForCausalLM.from_pretrained("TheBloke/Llama-2-13B-Chat-GGML", model_file='llama-2-13b-chat.ggmlv3.q8_0.bin', model_type="llama", gpu_layers=100)
+            self._llm = AutoModelForCausalLM.from_pretrained("TheBloke/Llama-2-13B-Chat-GGML", model_file='llama-2-13b-chat.ggmlv3.q4_0.bin', model_type="llama", gpu_layers=100)
         else:
             self._llm = AutoModelForCausalLM.from_pretrained("TheBloke/Llama-2-7B-Chat-GGML", model_file='llama-2-7b-chat.ggmlv3.q4_0.bin', model_type="llama")
         
