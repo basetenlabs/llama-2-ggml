@@ -1,0 +1,14 @@
+environment_variables: {}
+external_package_dirs: []
+model_metadata: {}
+model_name: null
+python_version: py39
+requirements:
+- ctransformers
+resources:
+  accelerator: A10G
+  cpu: "8"
+  memory: 30Gi
+  use_gpu: true
+secrets: {}
+system_packages: []
